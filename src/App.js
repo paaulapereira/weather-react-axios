@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "http://api.weatherapi.com/v1/current.json?key=1df3ea496ec64262a8d83056212411&q=London&aqi=no"
+        `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API}&q=London&aqi=no`
       )
       .then((data) => {
         setWeather(data.data);
@@ -26,7 +26,7 @@ function App() {
   const searchWeather = () => {
     axios
       .get(
-        `http://api.weatherapi.com/v1/current.json?key=1df3ea496ec64262a8d83056212411&q=${input}&aqi=no`
+        `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API}&q=${input}&aqi=no`
       )
       .then((data) => {
         setWeather(data.data);
