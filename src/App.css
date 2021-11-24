@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.weather-container {
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  margin-right: 10px;
+  width: 25rem;
+  height: 1.8rem;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  font-size: 15px;
+}
+button {
+  text-transform: uppercase;
+  border-radius: 5px;
+  width: 8rem;
+  height: 1.875rem;
+  background-color: #f07f7f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+h1 {
+  color: #f07f7f;
+}
+.weather-temperature {
+  text-align: center;
+}
