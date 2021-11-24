@@ -1,3 +1,8 @@
+# Weather Info
+
+This project is for you to get to know the weather info about any city in the world!
+You just have to clone it and get started!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
